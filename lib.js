@@ -1,4 +1,4 @@
-//largest number
+//q1 largest number
 export const largestNumber = (arr) => {
   //    answer1
   //   let max = arr[0];
@@ -24,7 +24,7 @@ export const largestNumber = (arr) => {
   return { largest: maxnum, BeforeTheLargest: maxnum2 };
 };
 
-//longest name
+//q2 longest name
 export const longestName = (arr) => {
   //answer1
   // let longname = arr[0];
@@ -45,19 +45,20 @@ export const longestName = (arr) => {
   return longname;
 };
 
-//number bigger than their
-export const biggerNum = (arr) => {
+//q3 number bigger than their
+export const biggerNum = (arr = []) => {
   let arr1 = [];
-  let arr2 = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > arr[i + 1] && arr[i + 1] < arr[i + 2]) {
-      arr1 = arr[i + 1];
+  let tem;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+      arr1.push(arr[i]);
     }
   }
+
   return arr1;
 };
 
-//number of pepole
+//q4 number of pepole
 export const numberOfPeople = (arr) => {
   //answer1
   // let arr1 = [];
@@ -80,7 +81,7 @@ export const numberOfPeople = (arr) => {
   return count;
 };
 
-//specific number
+//q5 specific number
 export const specificNum = (arr, num) => {
   //answer1
   // let result = arr.indexOf(num);
@@ -102,7 +103,7 @@ export const specificNum = (arr, num) => {
   return found;
 };
 
-// avarage of numbers
+//q6 avarage of numbers
 export const averageNum = (arr = []) => {
   //answer1
   let sum = arr.reduce((sum, num) => sum + num);
@@ -114,4 +115,21 @@ export const averageNum = (arr = []) => {
 
   let avg = sum / arr.length;
   return avg;
+};
+//q6 Common elements
+export const comper = (arr1 = [], arr2 = []) => {
+  //answer1
+  let arr = arr1.filter((x) => arr2.some((y) => y === x));
+  //answer2
+  // let arr = arr1.filter((x) => arr2.includes(x));
+  // //answer3
+  //let arr =[] ;
+  // for (let i = 0; i < arr1.length; i++) {
+  //   for (let j = 0; j < arr2.length; j++) {
+  //     if (arr1[i] === arr2[j]) {
+  //       arr.push(arr1[i]);
+  //     }
+  //   }
+  // }
+  return arr;
 };

@@ -5,14 +5,14 @@ import {
   numberOfPeople,
   specificNum,
   averageNum,
+  comper,
 } from "./lib.js";
-// const arr = [1, 3, 4, 5, 12, 31, 4, 2, 16];
-// const numbig = biggerNum(arr);
-// console.log(numbig);
-
-const arr = [1, 2, 3, 44, 10];
-const avg = averageNum(arr);
-console.log(avg);
+const arr1 = [1, 3, 4, "A", 12, 31, 4, "Hello", 25];
+const arr2 = [1, "Hello", 3, "A", 20];
+const numbig = comper(arr1, arr2);
+console.log(numbig);
+// const avg = averageNum(arr2);
+// console.log(avg);
 
 // const names = ["John", "Alice", "Bob", "Eve", "Charlie", "Ghadanfar"];
 // const longest = longestName(names);
