@@ -116,13 +116,14 @@ export const averageNum = (arr = []) => {
   let avg = sum / arr.length;
   return avg;
 };
-//q6 Common elements
+//q7 Common elements
 export const comper = (arr1 = [], arr2 = []) => {
   //answer1
   let arr = arr1.filter((x) => arr2.some((y) => y === x));
   //answer2
   // let arr = arr1.filter((x) => arr2.includes(x));
-  // //answer3
+
+  //answer3
   //let arr =[] ;
   // for (let i = 0; i < arr1.length; i++) {
   //   for (let j = 0; j < arr2.length; j++) {
@@ -132,4 +133,75 @@ export const comper = (arr1 = [], arr2 = []) => {
   //   }
   // }
   return arr;
+};
+//q8 sort cites
+export const sortCites = (arr = []) => {
+  let arr1 = arr.sort();
+  return arr1;
+};
+
+//q9 duplicated
+export const duplicated = (arr = []) => {
+  //answer1
+  //let arr1 = arr.filter((x, index) => arr.indexOf(x) !== index);
+  let arr1 = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].some(arr)) {
+      arr1.push(arr[i]);
+    }
+  }
+  return arr1;
+};
+//q10 split an array
+export const split = (arr) => {
+  //answer1
+  // let arr1 = [];
+  // let tmp = [];
+  // for (let i = 0; i < arr.length; i++) {
+  //   tmp.push(arr[i]);
+  //   if (tmp.length == 3) {
+  //     arr1.push(tmp);
+  //     tmp = [];
+  //   }
+  // }
+  // if (tmp.length > 0) {
+  //   arr1.push(tmp);
+  // }
+
+  return arr1;
+};
+//q11  reverse
+export const reverseValue = (arr) => {
+  let arr1 = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr1.push(reverse(arr[i]));
+  }
+  return arr1;
+};
+
+//q12 fullname
+export const fullNames = (arr = []) => {
+  let result = "";
+  let firstWord = true;
+   ;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == " ") {
+      result += ".";
+      firstWord = false;
+    } else {
+      if (firstWord == false) {
+        for (let j = 0; j < arr.length; j++) {
+          if (arr[i] == arr.lower[j]) {
+            result += arr.upper[j];
+            break;
+          }
+        }
+
+        firstWord = true;
+      } else {
+        result += arr[i];
+      }
+    }
+  }
+  return result;
 };
