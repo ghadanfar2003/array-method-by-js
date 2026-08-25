@@ -43,3 +43,36 @@ export const longestName = (arr) => {
   let longname = arr1[0];
   return longname;
 };
+
+//number bigger than their
+export const biggerNum = (arr) => {
+  let arr1 = [];
+  let arr2 = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > arr[i + 1] && arr[i + 1] < arr[i + 2]) {
+      arr1 = arr[i + 1];
+    }
+  }
+  return arr1;
+};
+
+//number of pepole
+export const numberOfPeople = (arr) => {
+  //answer1
+  // let arr1 = [];
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (arr[i] >= 18) {
+  //     arr1.push(arr[i]);
+  //   }
+  // }
+  //answer2
+  // let arr1 = arr.filter((num) => num >= 18);
+  //answer3
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] >= 18) {
+      count++;
+    }
+  }
+  return count;
+};
