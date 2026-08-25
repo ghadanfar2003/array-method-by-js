@@ -9,6 +9,7 @@ export const largestNumber = (arr) => {
   //       max = arr[i];
   //     }
   //   }
+
   //   answer2
   //   let arr1 = arr.sort();
   //   let maxnum = arr1[arr1.length-1];
@@ -65,8 +66,10 @@ export const numberOfPeople = (arr) => {
   //     arr1.push(arr[i]);
   //   }
   // }
+
   //answer2
   // let arr1 = arr.filter((num) => num >= 18);
+
   //answer3
   let count = 0;
   for (let i = 0; i < arr.length; i++) {
@@ -75,4 +78,26 @@ export const numberOfPeople = (arr) => {
     }
   }
   return count;
+};
+
+//specific number
+export const specificNum = (arr, num) => {
+  //answer1
+  // let result = arr.indexOf(num);
+  // if (result === -1) return false;
+  // else {
+  //   return true;
+  // }
+
+  //answer2
+  //let result = arr.includes(num);
+
+  //answer3
+  let found = false;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == num) {
+      found = true;
+    }
+  }
+  return found;
 };
