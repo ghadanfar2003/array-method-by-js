@@ -1,0 +1,22 @@
+{
+  "name": "array-method-by",
+  "version": "1.0.0",
+  "description": "some exercise in js by array method",
+  "main": "lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghadanfar2003/array-method-by-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghadanfar2003/array-method-by-js/issues"
+  },
+  "homepage": "https://github.com/ghadanfar2003/array-method-by-js#readme"
+}
