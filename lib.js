@@ -101,3 +101,17 @@ export const specificNum = (arr, num) => {
   }
   return found;
 };
+
+// avarage of numbers
+export const averageNum = (arr = []) => {
+  //answer1
+  let sum = arr.reduce((sum, num) => sum + num);
+
+  //answer2
+  // for (let i = 0; i < arr.length; i++) {
+  //   sum += arr[i];
+  // }
+
+  let avg = sum / arr.length;
+  return avg;
+};
