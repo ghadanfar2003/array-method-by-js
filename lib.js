@@ -22,3 +22,24 @@ export const largestNumber = (arr) => {
 
   return { largest: maxnum, BeforeTheLargest: maxnum2 };
 };
+
+//longest name
+export const longestName = (arr) => {
+  //answer1
+  // let longname = arr[0];
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (arr[i].length > longname.length) {
+  //     longname = arr[i];
+  //   }
+  // }
+
+  // //answer2
+  // let arr1 = arr.sort((a, b)=> a.length - b.length);
+  // let longname = arr1[arr1.length - 1];
+
+  //answer3
+  let arr1 = arr.sort((a, b) => a.length - b.length);
+  arr1.reverse();
+  let longname = arr1[0];
+  return longname;
+};
