@@ -11,6 +11,8 @@ import {
   split,
   reverseValue,
   fullNames,
+  sortPepole,
+  product,
 } from "./lib.js";
 const arr1 = [
   "Ale epo",
@@ -31,3 +33,10 @@ console.log(numbig);
 // const names = ["John", "Alice", "Bob", "Eve", "Charlie", "Ghadanfar"];
 // const longest = longestName(names);
 // console.log(longest);
+
+const employees = [
+  { name: "Ghadanfar", salary: 5000, currency: "USD", age: 23 },
+  { name: "Ghalib", salary: 4000, currency: "USD", age: 25 },
+  { name: "Ziad", salary: 3000, currency: "USD", age: 17 },
+];
+console.log(product(employees));

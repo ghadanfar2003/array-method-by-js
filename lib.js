@@ -183,7 +183,6 @@ export const reverseValue = (arr) => {
 export const fullNames = (arr = []) => {
   let result = "";
   let firstWord = true;
-   ;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] == " ") {
       result += ".";
@@ -204,4 +203,16 @@ export const fullNames = (arr = []) => {
     }
   }
   return result;
+};
+//q17
+export const product = (arr = []) => {
+  const avgArr = arr.reduce((sum, x) => sum + x.salary, 0) / arr.length;
+  const nameArr = arr.filter((x) => x.salary > avgArr);
+  return nameArr;
+};
+
+//q18
+export const sortPepole = (arr = []) => {
+  const resArr = arr.sort((x, y) => y.age - x.age).map((x) => x.name);
+  return resArr;
 };
