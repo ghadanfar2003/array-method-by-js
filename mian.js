@@ -13,6 +13,7 @@ import {
   fullNames,
   sortPepole,
   product,
+  namesOf,
 } from "./lib.js";
 const arr1 = [
   "Ale epo",
@@ -35,8 +36,8 @@ console.log(numbig);
 // console.log(longest);
 
 const employees = [
-  { name: "Ghadanfar", salary: 5000, currency: "USD", age: 23 },
-  { name: "Ghalib", salary: 4000, currency: "USD", age: 25 },
-  { name: "Ziad", salary: 3000, currency: "USD", age: 17 },
+  { name: "Ghadanfar", salary: 5000, status: "pass", currency: "USD", age: 23 },
+  { name: "Ghalib", salary: 4000, status: "pass", currency: "USD", age: 25 },
+  { name: "Ziad", salary: 3000, status: "filad", currency: "USD", age: 17 },
 ];
-console.log(product(employees));
+console.log(namesOf(employees));

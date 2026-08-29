@@ -204,6 +204,11 @@ export const fullNames = (arr = []) => {
   }
   return result;
 };
+//q16
+export const namesOf = (arr = []) => {
+  const arrName = arr.filter((x) => x.status == "pass").map((x) => x.name);
+  return arrName;
+};
 //q17
 export const product = (arr = []) => {
   const avgArr = arr.reduce((sum, x) => sum + x.salary, 0) / arr.length;
