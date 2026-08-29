@@ -16,6 +16,7 @@ import {
   namesOf,
   sumPositive,
   findWord,
+  findProduct,
 } from "./lib.js";
 const arr1 = [
   "Aleepo",
@@ -33,9 +34,9 @@ const numbig = sumPositive(arr2);
 // const avg = averageNum(arr2);
 // console.log(avg);
 
- const names = ["John", "Alice", "Bob", "Eve", "Charlie", "Ghadanfar"];
- const longest = findWord(names);
- console.log(longest);
+const names = ["John", "Alice", "Bob", "Eve", "Charlie", "Ghadanfar"];
+const longest = findWord(names);
+console.log(longest);
 
 const employees = [
   { name: "Ghadanfar", salary: 5000, status: "pass", currency: "USD", age: 23 },
@@ -43,3 +44,9 @@ const employees = [
   { name: "Ziad", salary: 3000, status: "filad", currency: "USD", age: 17 },
 ];
 // console.log(namesOf(employees));
+const products = [
+  { name: "phone", price: 100, currency: "USD" },
+  { name: "labtob", price: 1200, currency: "USD" },
+  { name: "pc", price: 3000, currency: "USD" },
+];
+console.log(findProduct(products));

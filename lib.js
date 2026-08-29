@@ -204,6 +204,11 @@ export const fullNames = (arr = []) => {
   }
   return result;
 };
+//q13
+export const findProduct = (arr = []) => {
+  const arrFind = arr.find((x) => x.price > 1000);
+  return arrFind;
+};
 //q14
 export const findWord = (arr = []) => {
   const numWord = arr.filter((x) => x.length > 5).sort();
