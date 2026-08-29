@@ -204,6 +204,11 @@ export const fullNames = (arr = []) => {
   }
   return result;
 };
+//q14
+export const findWord = (arr = []) => {
+  const numWord = arr.filter((x) => x.length > 5).sort();
+  return numWord;
+};
 //q15
 export const sumPositive = (arr = []) => {
   const arrpo = arr.filter((x) => x > 0);
