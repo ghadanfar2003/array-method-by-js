@@ -14,6 +14,7 @@ import {
   sortPepole,
   product,
   namesOf,
+  sumPositive,
 } from "./lib.js";
 const arr1 = [
   "Ale epo",
@@ -25,8 +26,8 @@ const arr1 = [
   "Deirez Zor",
 ];
 
-const arr2 = [1, 1.5, 3, 20, 1.5, 3, 6, 9];
-const numbig = fullNames(arr1);
+const arr2 = [1, -1.5, 3, -20, -1.5, 3, 6, 9];
+const numbig = sumPositive(arr2);
 console.log(numbig);
 // const avg = averageNum(arr2);
 // console.log(avg);
@@ -40,4 +41,4 @@ const employees = [
   { name: "Ghalib", salary: 4000, status: "pass", currency: "USD", age: 25 },
   { name: "Ziad", salary: 3000, status: "filad", currency: "USD", age: 17 },
 ];
-console.log(namesOf(employees));
+// console.log(namesOf(employees));

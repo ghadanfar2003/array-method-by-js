@@ -204,6 +204,12 @@ export const fullNames = (arr = []) => {
   }
   return result;
 };
+//q15
+export const sumPositive = (arr = []) => {
+  const arrpo = arr.filter((x) => x > 0);
+  const arrSum = arrpo.reduce((sum, x) => sum + x, 0);
+  return arrSum;
+};
 //q16
 export const namesOf = (arr = []) => {
   const arrName = arr.filter((x) => x.status == "pass").map((x) => x.name);
